@@ -24,7 +24,7 @@ Using the Framework
 ========================
 The Cumulus Linux Demo Framework is built upon a Vagrantfile which builds the Reference Topology (pictured above). Using this topology, it is possible to demonstrate any feature in Cumulus Linux. It may not be necessary to use all links or all devices but they're present if needed by a particular demo.
 
-This framework of demos is built on a two-tier spine-leaf [CLOS network](https://en.wikipedia.org/wiki/Clos_network) with a
+This framework of demos is built on a two-tier spine-leaf [Clos network](https://en.wikipedia.org/wiki/Clos_network) with a
 dedicated out-of-band management network. The topology built in this demo is
 the reference topology used for all Cumulus Networks documentation, demos, and course materials, so
 many demos will require you to build a topology using the code available in this
@@ -77,12 +77,12 @@ On an Ubuntu 16.04 box, this can be done with the following commands:
 
 Typically demos are built upon the Reference Topology shown here using this repository as a starting point and layering device configuration on top.
 
-* **[Cldemo-docker-quagga](https://github.com/CumulusNetworks/cldemo-docker-quagga)** -- This demo shows off two ways of putting Quagga into a Docker container to do Layer 3 networking on the hosts.
-* **[Cldemo-automation-puppet](https://github.com/CumulusNetworks/cldemo-automation-puppet)** -- This demo demonstrates how to write a manifest using Puppet to configure switches running Cumulus Linux and servers running Ubuntu.
-* **[Cldemo-automation-ansible](https://github.com/CumulusNetworks/cldemo-automation-ansible)** -- This demo demonstrates how to write a playbook using Ansible to configure switches running Cumulus Linux and servers running Ubuntu.
-* **[Cldemo-automation-chef](https://github.com/CumulusNetworks/cldemo-automation-chef)** -- This demo demonstrates how to write a set of cookbooks using Chef to configure switches running Cumulus Linux and servers running Ubuntu. 
+* **[Cldemo-docker-quagga](https://github.com/CumulusNetworks/cldemo-docker-quagga/tree/2.5.x)** -- This demo shows off two ways of putting Quagga into a Docker container to do Layer 3 networking on the hosts.
+* **[Cldemo-automation-puppet](https://github.com/CumulusNetworks/cldemo-automation-puppet/tree/2.5.x)** -- This demo demonstrates how to write a manifest using Puppet to configure switches running Cumulus Linux and servers running Ubuntu.
+* **[Cldemo-automation-ansible](https://github.com/CumulusNetworks/cldemo-automation-ansible/tree/2.5.x)** -- This demo demonstrates how to write a playbook using Ansible to configure switches running Cumulus Linux and servers running Ubuntu.
+* **[Cldemo-automation-chef](https://github.com/CumulusNetworks/cldemo-automation-chef/tree/2.5.x)** -- This demo demonstrates how to write a set of cookbooks using Chef to configure switches running Cumulus Linux and servers running Ubuntu. 
 * **[Cldemo-onie-ztp-ptm](https://github.com/CumulusNetworks/cldemo-onie-ztp-ptm)** -- This demo demonstrates how to configure an out of band management network to automatically install and configure Cumulus Linux using Zero Touch Provisioning, and validate the cabling of the switches using Prescriptive Topology Manager.
-* **[Cldemo-config-routing](https://github.com/CumulusNetworks/cldemo-config-routing)** -- This Github repository contains the configuration files necessary for setting up Layer 3 routing on a CLOS topology using Cumulus Linux and Quagga.
+* **[Cldemo-config-routing](https://github.com/CumulusNetworks/cldemo-config-routing/tree/2.5.x)** -- This Github repository contains the configuration files necessary for setting up Layer 3 routing on a Clos topology using Cumulus Linux and Quagga.
 * **[Cldemo-rdnbr-ansible](https://github.com/CumulusNetworks/cldemo-rdnbr-ansible)** -- COMING SOON -- This demo shows a topology using 'redistribute-neighbor' to add host reachability directly into a BGP routed fabric. 
 * **[Cldemo-roh-ansible](https://github.com/CumulusNetworks/cldemo-roh-ansible)** -- COMING SOON -- This demo shows a topology using 'Routing on the Host' to add host reachability directly into a BGP routed fabric.
 * **[Cldemo-config-mlag](https://github.com/CumulusNetworks/cldemo-config-mlag)** -- COMING SOON
@@ -97,6 +97,7 @@ To use the reference topology by itself outside of the above demos, follow the i
 
     git clone https://github.com/cumulusnetworks/cldemo-vagrant
     cd cldemo-vagrant
+    git checkout 2.5.x
     vagrant up
     vagrant ssh oob-mgmt-server
     sudo su - cumulus
