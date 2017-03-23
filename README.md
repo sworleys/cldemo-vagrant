@@ -57,7 +57,7 @@ devices **must** be accessed via the out-of-band management server.
 Before running this demo or any of the other demos in the list below, install
 [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds) and
 [Vagrant](https://releases.hashicorp.com/vagrant/). The currently supported
-versions of VirtualBox and Vagrant are **5.1.8r111374** and **1.8.6**
+versions of VirtualBox and Vagrant are **5.1.14 ** and **1.8.7**
 
 On Windows, if you have HyperV enabled, you will need to disable it as it will
 conflict with Virtualbox's ability to create 64-bit VMs.
@@ -69,7 +69,8 @@ Typically demos are built upon the Reference Topology shown here using this repo
 * **[Cldemo-config-routing](https://github.com/CumulusNetworks/cldemo-config-routing)** -- This Github repository contains the configuration files necessary for setting up Layer 3 routing on a CLOS topology using Cumulus Linux and Quagga.
 * **[Cldemo-config-mlag](https://github.com/CumulusNetworks/cldemo-config-mlag)** -- This demo shows a topology using MLAG to dual-connect hosts at Layer 2 to two top of rack leafs and uses BGP unnumbered/L3 for everything above the leaf layer.
 * **[Cldemo-roh-ansible](https://github.com/CumulusNetworks/cldemo-roh-ansible)** --  This demo shows a topology using 'Routing on the Host' to add host reachability directly into a BGP routed fabric.
-* **[Cldemo-roh-docker](https://github.com/CumulusNetworks/cldemo-roh-docker)** -- This demo shows how to do ROH with a docker container.
+* **[Cldemo-roh-docker](https://github.com/CumulusNetworks/cldemo-roh-docker)** -- This demo shows how to redistribute docker bridges into a Routing on the Host container to advertise host container subnets into a BGP routed fabric.
+* **[Cldemo-roh-dad](https://github.com/CumulusNetworks/cldemo-roh-dad)** -- *COMING SOON!* This demo shows how to dynamically advertise host-routes for container IP addresses into a Routing on the Host Container to advertise containers into a BGP routed fabric.
 * **[Cldemo-automation-puppet](https://github.com/CumulusNetworks/cldemo-automation-puppet)** -- This demo demonstrates how to write a manifest using Puppet to configure switches running Cumulus Linux and servers running Ubuntu.
 * **[Cldemo-automation-ansible](https://github.com/CumulusNetworks/cldemo-automation-ansible)** -- This demo demonstrates how to write a playbook using Ansible to configure switches running Cumulus Linux and servers running Ubuntu.
 * **[Cldemo-automation-chef](https://github.com/CumulusNetworks/cldemo-automation-chef)** -- This demo demonstrates how to write a set of cookbooks using Chef to configure switches running Cumulus Linux and servers running Ubuntu.
