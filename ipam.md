@@ -3,7 +3,7 @@ IPAM
 
 IP Address Schema for Cumulus Networks Demos
 
-| Device | Loopback (lo) IP | Eth0 | AS for BGP |
+| Device | Loopback (lo) IP | Eth0 (Management IP) | AS for BGP |
 |-----|-----|-----|-----|
 | Leaf01 | 10.0.0.11/32   | 192.168.0.11 | 65011 |
 | Leaf02 | 10.0.0.12/32   | 192.168.0.12 | 65012 |
@@ -18,7 +18,7 @@ IP Address Schema for Cumulus Networks Demos
 | server03 | 10.0.0.33/32   |  192.168.0.33  |  65033 |
 | server04 | 10.0.0.34/32   |  192.168.0.34  |  65034 |
 | edge01 | 10.0.0.51/32   |  192.168.0.51  | 65051 |
-| oob-mgmt-switch | 10.0.0.61/32   |  192.168.0.61  | UNASSIGNED |
+| oob-mgmt-switch | UNASSIGNED   |  192.168.0.1 (bridge)  | UNASSIGNED |
 | internet | UNASSIGNED | 192.168.1.253 | UNASSIGNED |
 
 MAC Address Management
