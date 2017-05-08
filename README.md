@@ -82,6 +82,7 @@ Typically demos are built upon the Reference Topology shown here using this repo
 * **[Cldemo-pim](https://github.com/CumulusNetworks/cldemo-pim)** -- This demo implements Cumulus Linux PIM EA version. The demo includes simple python applications to simulate multicast senders and receivers.
 * **[Cldemo-evpn](https://github.com/CumulusNetworks/cldemo-evpn)** -- This demo implements EVPN on Cumulus Linux.  This demo is standalone and does not require cldemo-vagrant.
 * **[Cldemo-dynamic-ansible-inventory](https://github.com/CumulusNetworks/cldemo-dynamic-ansible-inventory)** -- A demonstration of using Ansible with external data sources, specifically Redis or MySQL databases.
+* **[Cldemo-docker-macvlan](https://github.com/CumulusNetworks/cldemo-docker-macvlan)** -- A demonstration of advertising docker containers using the macvlan networking option.
 
 Getting Started
 ------------------
