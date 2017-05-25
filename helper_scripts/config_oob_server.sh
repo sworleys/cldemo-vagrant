@@ -25,7 +25,8 @@ echo "    netmask 255.255.255.0" >> /etc/network/interfaces
 echo "cumulus ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/10_cumulus
 
 
-ifup eth1
+sleep 2 && ifup eth1
+apt-get install apt-cacher-ng
 sed "s/PasswordAuthentication no/PasswordAuthentication yes/" -i /etc/ssh/sshd_config
 service ssh restart
 
